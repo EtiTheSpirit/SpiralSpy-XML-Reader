@@ -84,7 +84,7 @@ function XML:FindTriangles(PosEnd, XMLFile)
 	return Vec1, Vec2, Vec3, nPos2
 end
 
-function XML:FindOffset(PosEnd, XMLFile)
+function XML:FindOffset(PosEnd, XMLFile) --NEEDS WORK
 	if not PosEnd then PosEnd = 1 end
 	local _, startOfTriangle = string.find(XMLFile, "<maxExtent>", PosEnd)-string.len("<maxExtent>")
 	local endOfTriangle, _ = string.find(XMLFile, "</maxExtent>", startOfTriangle)
