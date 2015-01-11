@@ -1,4 +1,4 @@
-# SpiralSpy-XML-Reader
+#Current Version: 4 -- Fixed script erroring on certain models
 
 #MainHandler.lua is, since this is ROBLOX and items have parent instances and child instances,inside of the main code (Spiral Knights Model Converter.lua)
 
