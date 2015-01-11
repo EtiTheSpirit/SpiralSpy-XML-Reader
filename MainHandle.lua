@@ -1,3 +1,6 @@
+--Create a ModuleScript and name it MainHandle
+--Put that modulescript inside of a script instance
+
 local XML = {}
 
 function XML:FindTriangles(PosEnd, XMLFile)
