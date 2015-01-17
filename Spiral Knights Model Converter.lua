@@ -32,10 +32,17 @@ local f = {}
 local bones = {}
 local tris = {}
 local array = {}
+
+CountOfFaces = 0
+--[[--
 _, CountOfFaces1 = string.gsub(xml, "<v1>", "<v1>")
 _, CountOfFaces2 = string.gsub(xml, "<v2>", "<v2>")
 _, CountOfFaces3 = string.gsub(xml, "<v3>", "<v3>")
 CountOfFaces = CountOfFaces1+CountOfFaces2+CountOfFaces3
+--]]--
+for _,_ in string.gmatch(xml, "<triangle>") do
+	CountOfFaces = CountOfFaces+1
+end
 
 print("Vertex count = "..CountOfFaces)
 print("Face count = "..CountOfFaces/3)
