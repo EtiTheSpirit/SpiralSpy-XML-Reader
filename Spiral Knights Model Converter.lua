@@ -44,8 +44,8 @@ for _,_ in string.gmatch(xml, "<triangle>") do
 	CountOfFaces = CountOfFaces+1
 end
 
-print("Vertex count = "..CountOfFaces)
-print("Face count = "..CountOfFaces/3)
+print("Vertex count = "..CountOfFaces*3)
+print("Face count = "..CountOfFaces)
 
 function GetTriangles()
 	repeat
